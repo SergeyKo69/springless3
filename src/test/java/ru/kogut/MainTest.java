@@ -15,7 +15,7 @@ import ru.kogut.enterprise.model.Company;
 public class MainTest {
 
     @Test
-    public void TestCompany(){
+    public void TestCompany() {
         final ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
         final CompanyDAO companyDao = context.getBean(CompanyDAO.class);
         Company company = new Company();
@@ -28,7 +28,7 @@ public class MainTest {
     }
 
     @Test
-    public void TestCategory(){
+    public void TestCategory() {
         final ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
         final CategoryDAO categoryDAO = context.getBean(CategoryDAO.class);
         Category category = new Category();
@@ -39,7 +39,7 @@ public class MainTest {
     }
 
     @Test
-    public void TestAd(){
+    public void TestAd() {
         final ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
         final CompanyDAO companyDao = context.getBean(CompanyDAO.class);
         final CategoryDAO categoryDAO = context.getBean(CategoryDAO.class);
